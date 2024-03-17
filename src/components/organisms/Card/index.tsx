@@ -27,6 +27,13 @@ const Card = ({ card }: CardProps) => {
         </p>
       </div>
       <div className="card-body">
+        <ul className="features">
+          {card.featureList.map((feature, index) => (
+            <li key={index} className="features__item">
+              <p className="features__text">{feature}</p>
+            </li>
+          ))}
+        </ul>
         <Button text="Buy" />
       </div>
     </div>
