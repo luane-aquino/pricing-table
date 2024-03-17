@@ -1,35 +1,67 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Cards from "./components/organisms/Cards";
+
+const cardData = [
+  {
+    title: "Free",
+    free: "Forever",
+    price: null,
+    when: null,
+    featureList: [
+      "Plan Feature First",
+      "Plan Feature Second",
+      "Plan Feature",
+      "Plan Feature Fourth",
+      "+ Previous Plan",
+    ],
+  },
+  {
+    title: "Starter",
+    free: null,
+    price: 10,
+    when: "Per Month",
+    featureList: [
+      "Plan Feature First",
+      "Plan Feature Second",
+      "Plan Feature",
+      "Plan Feature Fourth",
+      "+ Previous Plan",
+    ],
+  },
+  {
+    title: "Basic",
+    free: null,
+    price: 25,
+    when: "Per Month",
+    featureList: [
+      "Plan Feature First",
+      "Plan Feature Second",
+      "Plan Feature",
+      "Plan Feature Fourth",
+      "+ Previous Plan",
+    ],
+  },
+  {
+    title: "Pro",
+    free: null,
+    price: 45,
+    when: "Per Month",
+    featureList: [
+      "Plan Feature First",
+      "Plan Feature Second",
+      "Plan Feature",
+      "Plan Feature Fourth",
+      "+ Previous Plan",
+    ],
+  },
+];
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Cards cards={cardData} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

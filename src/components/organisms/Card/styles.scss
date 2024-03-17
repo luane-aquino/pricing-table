@@ -1,0 +1,60 @@
+.Card {
+  width: 250px;
+  height: 450px;
+  background-color: pink;
+  border-radius: 5.31212px;
+  display: flex;
+  flex-direction: column;
+
+  .card-header {
+    height: 40%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    background: linear-gradient(220.27deg, #6574ff 23.91%, #959fff 95.9%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &__title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 29.2166px;
+      line-height: 34px;
+      letter-spacing: 0.02em;
+      margin: 0;
+    }
+
+    &__description {
+      margin: 0;
+      letter-spacing: 0.02em;
+      font-size: 13.2803px;
+    }
+
+    &__price {
+      font-weight: 500;
+      font-size: 45.153px;
+      line-height: 53px;
+      letter-spacing: 0.02em;
+    }
+
+    &__price::before {
+      content: "$";
+      font-size: 1.5rem;
+      position: relative;
+      top: -19px;
+      right: 3px;
+      font-weight: 500;
+      font-size: 21.2485px;
+      line-height: 25px;
+    }
+
+    &:hover {
+      background: linear-gradient(220.27deg, #e75266 23.91%, #ec8492 95.9%);
+    }
+  }
+
+  .card-body {
+  }
+}
