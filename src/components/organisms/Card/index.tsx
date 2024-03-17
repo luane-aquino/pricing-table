@@ -1,3 +1,4 @@
+import Button from "../../molecules/Button";
 import { CardType } from "../Cards";
 import "./styles.scss";
 
@@ -25,7 +26,9 @@ const Card = ({ card }: CardProps) => {
           {card.free ?? card.when}
         </p>
       </div>
-      <div className="card-body">b</div>
+      <div className="card-body">
+        <Button text="Buy" />
+      </div>
     </div>
   );
 };

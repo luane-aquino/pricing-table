@@ -1,0 +1,22 @@
+.Button {
+  width: 60%;
+  color: #e75266;
+  background-color: transparent;
+  border: 1.59364px solid #e75266;
+  border-radius: 82.3378px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10.6242px 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.2723px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+
+  &:hover {
+    background-color: #e75266;
+    color: #fff;
+  }
+}
