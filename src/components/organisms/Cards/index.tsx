@@ -15,11 +15,11 @@ type CardsProps = {
 
 const Cards = ({ cards }: CardsProps) => {
   return (
-    <div className="Cards">
+    <ul className="Cards">
       {cards.map((card, index) => (
         <Card card={card} key={index} />
       ))}
-    </div>
+    </ul>
   );
 };
 
