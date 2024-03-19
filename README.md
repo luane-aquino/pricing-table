@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# Pricing table pop-up component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a frontend implementation of a design from Figma, built with React, Vite, and SCSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: The application is responsive and works on both desktop and mobile devices.
+- **Accessibility**: The application is accessible using semantic tags and can be used by mouse or keyboard.
 
-## Expanding the ESLint configuration
+## Design Credits
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The design for this project was created by Yusuf Sab. [Link to design on figma](<https://www.figma.com/file/Rj0mao5Ff3KwZyuHA0lFye/Pricing-Table-POP-UP-Component-(Community)?type=design&node-id=21-156&mode=design&t=30WQUxnR4hC8ItOn-0>)
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Prerequisites
+
+- Node.js
+- Yarn or NPM
+
+### Usage
+
+1. Clone the repo
+2. Install the dependencies: `yarn install`
+3. Run the app `yarn dev`, it will open on port http://localhost:5173
