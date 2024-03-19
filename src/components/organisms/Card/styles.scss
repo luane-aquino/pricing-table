@@ -1,7 +1,9 @@
+@import "../../../colors";
+
 .Card {
   width: 254px;
   height: 454px;
-  background-color: #fff;
+  background-color: $White;
   border-radius: 5.31212px 5.31212px 0 0;
   display: flex;
   flex-direction: column;
@@ -10,19 +12,19 @@
   &:hover {
     width: 264px;
     height: 494px;
-    box-shadow: 0px 0px 7px -1px #e75266;
+    box-shadow: 0px 0px 7px -1px $Red;
 
     .card-header {
-      background: linear-gradient(220.27deg, #e75266 23.91%, #ec8492 95.9%);
+      background: linear-gradient(220.27deg, $Red 23.91%, #ec8492 95.9%);
     }
 
     .features__text {
-      color: #e75266;
+      color: $Red;
     }
 
     .Button {
-      background-color: #e75266;
-      color: #fff;
+      background-color: $Red;
+      color: $White;
     }
   }
 

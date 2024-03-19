@@ -1,8 +1,10 @@
+@import "../../../colors";
+
 .Button {
   width: 70%;
-  color: #e75266;
+  color: $Red;
   background-color: transparent;
-  border: 1.59364px solid #e75266;
+  border: 1.59364px solid $Red;
   border-radius: 82.3378px;
   display: flex;
   justify-content: center;
@@ -17,7 +19,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: #e75266;
-    color: #fff;
+    background-color: $Red;
+    color: $White;
   }
 }
