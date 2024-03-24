@@ -1,14 +1,9 @@
 import { render, screen } from "../../../test/test-utils";
 import Button from "./";
-/*
-- should render button with text
-*/
 
-// describe("Button", () => {
-//   render();
-// });
-test("that jest is working", () => {
-  render(<Button text="hello" />);
-  expect(true).toBe(true);
-  expect(screen.getByText("hello")).toBeVisible();
+describe("Button", () => {
+  test("should show button text", () => {
+    render(<Button text="hello" />);
+    expect(screen.getByRole("button", { name: "hello" })).toBeVisible();
+  });
 });

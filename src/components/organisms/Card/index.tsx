@@ -8,7 +8,7 @@ type CardProps = {
 
 const Card = ({ card }: CardProps) => {
   return (
-    <li className="Card">
+    <li className="Card" data-testid="card">
       <div className="card-header">
         <h2 className="card-header__title">{card.title}</h2>
         {card.price && (
