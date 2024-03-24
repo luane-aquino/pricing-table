@@ -1,5 +1,5 @@
-import Button from "../../molecules/Button";
-import { CardType } from "../Cards";
+import Button from "@components/molecules/Button";
+import { CardType } from "@components/organisms/Cards";
 import "./styles.scss";
 
 type CardProps = {

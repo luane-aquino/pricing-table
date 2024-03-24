@@ -1,4 +1,4 @@
-import Card from "../Card";
+import Card from "@components/organisms/Card";
 import "./styles.scss";
 
 export type CardType = {

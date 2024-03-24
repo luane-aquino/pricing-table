@@ -1,5 +1,5 @@
 import "./App.css";
-import Cards from "./components/organisms/Cards";
+import Cards from "@components/organisms/Cards";
 
 const cardData = [
   {
