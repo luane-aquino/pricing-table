@@ -1,4 +1,4 @@
-import { render, screen, userEvent } from "../../../../test/test-utils";
+import { render, screen } from "../../../test/test-utils";
 import Button from "./";
 /*
 - should render button with text
